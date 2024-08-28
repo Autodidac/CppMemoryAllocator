@@ -34,7 +34,7 @@ A simple, fast memory allocator that allocates memory linearly from a pre-alloca
   std::free(memoryBlock); // Free the 1KB block when done
 
 
-2. BlockAllocator
+### **2. BlockAllocator
 A memory allocator that manages memory in blocks and uses a free list for efficient memory reuse. Suitable for allocating and deallocating objects frequently, such as in game engines or GUI systems.
 
 Features:
