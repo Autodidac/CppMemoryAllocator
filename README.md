@@ -27,3 +27,13 @@ A simple, fast memory allocator that allocates memory linearly from a pre-alloca
   // Use the allocated memory...
   linearAllocator.free(128); // Free 128 bytes (moves the offset back)
   linearAllocator.reset(); // Reset all allocations
+
+2. BlockAllocator
+A memory allocator that manages memory in blocks and uses a free list for efficient memory reuse. Suitable for allocating and deallocating objects frequently, such as in game engines or GUI systems.
+
+Features:
+
+Memory is divided into blocks for efficient reuse.
+Suitable for objects of uniform size.
+Low fragmentation and fast allocation.
+Usage:
