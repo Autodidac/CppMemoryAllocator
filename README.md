@@ -47,13 +47,13 @@ A memory allocator that manages memory in blocks and uses a free list for effici
 
     ```cpp
     #define ALLOCATOR_IMPLEMENTATION
-    #include "allocator.hpp"
+    #include "cpp_minallocator.hpp"
 
     class MyClass {
         // Define the class here
     };
 
-    allocator::BlockAllocator<MyClass> blockAllocator;
+    cpp_minallocator::BlockAllocator<MyClass> blockAllocator;
     MyClass* object = blockAllocator.allocate(); // Allocate a new object
     // Use the allocated object...
     blockAllocator.free(object); // Free the object (adds it back to the free list)
