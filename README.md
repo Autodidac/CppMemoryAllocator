@@ -37,7 +37,7 @@ A simple, fast memory allocator that allocates memory linearly from a pre-alloca
 ### **2. `BlockAllocator`**
 A memory allocator that manages memory in blocks and uses a free list for efficient memory reuse. Suitable for allocating and deallocating objects frequently, such as in game engines or GUI systems.
 
-Features:
+### **Features:**
 
 Memory is divided into blocks for efficient reuse.
 Suitable for objects of uniform size.
@@ -56,7 +56,7 @@ MyClass* object = blockAllocator.allocate(); // Allocate a new object
 // Use the allocated object...
 blockAllocator.free(object); // Free the object (adds it back to the free list)
 ```
-Building and Integrating
+### **Building and Integrating**
 To integrate these allocators into your project:
 
 Include the header-only library:
@@ -70,11 +70,11 @@ Set up your build system:
 
 No special build configuration is required since this is a single-file header-only library. Make sure your compiler supports C++20.
 
-Requirements
+### **Requirements**
 C++20 or higher: The library utilizes modern C++20 features like constexpr, concepts, and std::span.
 A compatible C++ compiler: Ensure you use a compiler that supports C++20, such as GCC 10+, Clang 10+, or MSVC 2019+.
 Contributing
 Contributions are welcome! Feel free to submit issues or pull requests for improvements or bug fixes.
 
-### License
+### **License**
 This project is licensed under the MIT License - see the LICENSE file for details.
