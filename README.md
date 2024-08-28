@@ -62,7 +62,6 @@ Feel free to submit issues or pull requests for improvements or bug fixes. Contr
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-
 ### Final Notes
 
-This version of the memory allocators is clean, modern, and adheres to best practices in C++ programming. The `README.md` provides a clear guide for potential users or contributors on GitHub, detailing the purpose, usage, and how to integrate the allocators into other projects.
+This version of the memory allocators is clean, modern, and adheres to best practices in C++ programming. 
