@@ -76,5 +76,5 @@ A compatible C++ compiler: Ensure you use a compiler that supports C++20, such a
 Contributing
 Contributions are welcome! Feel free to submit issues or pull requests for improvements or bug fixes.
 
-License
-This project is dual-licensed to the public domain and under the following license: you are granted a perpetual, irrevocable license to copy, modify, publish, and distribute this file as you see fit.
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
