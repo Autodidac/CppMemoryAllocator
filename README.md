@@ -1,4 +1,4 @@
-# **CppMemoryAllocator**
+# **cpp_minallocator**
 
 A **header-only** single-file memory allocator library in **C++20** designed for game development and other high-performance applications where control over memory management is crucial.
 
