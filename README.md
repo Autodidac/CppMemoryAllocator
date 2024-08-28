@@ -54,3 +54,26 @@ allocator::BlockAllocator<MyClass> blockAllocator;
 MyClass* object = blockAllocator.allocate(); // Allocate a new object
 // Use the allocated object...
 blockAllocator.free(object); // Free the object (adds it back to the free list)
+```
+Building and Integrating
+To integrate these allocators into your project:
+
+Include the header-only library:
+
+Ensure you include the allocator.hpp header in your source files:
+```cpp
+#define ALLOCATOR_IMPLEMENTATION
+#include "allocator.hpp"
+```
+Set up your build system:
+
+No special build configuration is required since this is a single-file header-only library. Make sure your compiler supports C++20.
+
+Requirements
+C++20 or higher: The library utilizes modern C++20 features like constexpr, concepts, and std::span.
+A compatible C++ compiler: Ensure you use a compiler that supports C++20, such as GCC 10+, Clang 10+, or MSVC 2019+.
+Contributing
+Contributions are welcome! Feel free to submit issues or pull requests for improvements or bug fixes.
+
+License
+This project is dual-licensed to the public domain and under the following license: you are granted a perpetual, irrevocable license to copy, modify, publish, and distribute this file as you see fit.
