@@ -36,4 +36,16 @@ Features:
 Memory is divided into blocks for efficient reuse.
 Suitable for objects of uniform size.
 Low fragmentation and fast allocation.
-Usage:
+Usage: 
+```cpp
+allocator::BlockAllocator<MyClass> blockAllocator;
+MyClass* object = blockAllocator.allocate(); // Allocate a new object
+// Use the allocated object...
+blockAllocator.free(object); // Free the object (adds it back to the free list)
+```
+
+Building and Integrating
+To integrate these allocators into your project:
+
+Include the LinearAllocator and BlockAllocator headers in your source files.
+Ensure your build system is configured to compile the allocators.
