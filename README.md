@@ -21,9 +21,9 @@ A simple, fast memory allocator that allocates memory linearly from a pre-alloca
 
     ```cpp
     #define ALLOCATOR_IMPLEMENTATION
-    #include "allocator.hpp"
+    #include "cpp_minallocator.hpp"
 
-    allocator::LinearAllocator linearAllocator;
+    cpp_minallocator::LinearAllocator linearAllocator;
     void* memoryBlock = std::malloc(1024); // Allocate 1KB block
     linearAllocator.init(memoryBlock, 1024);
 
@@ -65,11 +65,11 @@ To integrate these allocators into your project:
 
 1. **Include the header-only library:**
 
-    Ensure you include the `allocator.hpp` header in your source files:
+    Ensure you include the `cpp_minallocator.hpp` header in your source files:
 
     ```cpp
     #define ALLOCATOR_IMPLEMENTATION
-    #include "allocator.hpp"
+    #include "cpp_minallocator.hpp"
     ```
 
 2. **Set up your build system:**
