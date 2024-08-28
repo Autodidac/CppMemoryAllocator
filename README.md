@@ -49,3 +49,20 @@ To integrate these allocators into your project:
 
 Include the LinearAllocator and BlockAllocator headers in your source files.
 Ensure your build system is configured to compile the allocators.
+```cpp
+#include "LinearAllocator.h"
+#include "BlockAllocator.h"
+```
+Requirements
+C++17 or higher
+A compatible C++ compiler (e.g., GCC, Clang, MSVC)
+Contributing
+Feel free to submit issues or pull requests for improvements or bug fixes. Contributions are always welcome!
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+### Final Notes
+
+This version of the memory allocators is clean, modern, and adheres to best practices in C++ programming. The `README.md` provides a clear guide for potential users or contributors on GitHub, detailing the purpose, usage, and how to integrate the allocators into other projects.
